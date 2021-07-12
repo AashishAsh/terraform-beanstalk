@@ -1,0 +1,25 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+    -   id: trailing-whitespace #This hook trims trailing whitespace.
+    -   id: check-yaml #checks yaml files for parseable syntax.
+    -   id: check-added-large-files  #Prevent giant files from being committed.
+    -   id: check-merge-conflict
+    -   id: check-executables-have-shebangs
+    -   id: check-ast
+    -   id: detect-aws-credentials
+    -   id: detect-private-key
+    -   id: mixed-line-ending
+-   repo: git://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.45.0
+    hooks:
+      - id: terraform_fmt
+      - id: terraform_docs
+      - id: terraform_tflint
+      - id: terraform_tfsec
+      - id: terraform_validate
+-   repo: https://github.com/bridgecrewio/checkov
+    rev: 1.0.720
+    hooks:
+    -   id: checkov
