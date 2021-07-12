@@ -1,12 +1,14 @@
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 3.6 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 3.6 |
 
 ## Modules
 
@@ -38,5 +40,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_application_cname"></a> [application\_cname](#output\_application\_cname) | n/a |
-| <a name="output_application_name"></a> [application\_name](#output\_application\_name) | n/a |
+| <a name="output_application_cname"></a> [application\_cname](#output\_application\_cname) | FQDN for the application. |
+| <a name="output_application_name"></a> [application\_name](#output\_application\_name) | Name of the Application. |

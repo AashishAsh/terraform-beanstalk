@@ -1,5 +1,6 @@
 output "application_name" {
-  value = join("", aws_elastic_beanstalk_environment.application_environment.*.application)
+  description = "Name of the Application."
+  value       = join("", aws_elastic_beanstalk_environment.application_environment.*.application)
 }
 
 output "environment_name" {
@@ -7,5 +8,6 @@ output "environment_name" {
 }
 
 output "application_cname" {
-  value = join("", aws_route53_record.application_environment_ipv4_alias.*.fqdn)
+  description = "FQDN for the application."
+  value       = join("", aws_route53_record.application_environment_ipv4_alias.*.fqdn)
 }
