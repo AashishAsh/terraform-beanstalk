@@ -18,10 +18,6 @@ variable "fqdn" {
   description = "The domain name that clients should use to access the application environment"
 }
 
-variable "acm_certificate_arn" {
-  description = "The ARN of the certificate to use for HTTPS termination"
-}
-
 variable "settings" {
   type = list(object({
     namespace = string

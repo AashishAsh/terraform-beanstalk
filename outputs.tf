@@ -1,10 +1,11 @@
 output "application_name" {
-  description = "Name of the Application."
+  description = "Name of the application."
   value       = join("", aws_elastic_beanstalk_environment.application_environment.*.application)
 }
 
 output "environment_name" {
-  value = join("", aws_elastic_beanstalk_environment.application_environment.*.name)
+  description = "Name of the environment where the application runs."
+  value       = join("", aws_elastic_beanstalk_environment.application_environment.*.name)
 }
 
 output "application_cname" {

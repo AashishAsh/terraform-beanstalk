@@ -1,3 +1,4 @@
+<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
@@ -26,7 +27,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_acm_certificate_arn"></a> [acm\_certificate\_arn](#input\_acm\_certificate\_arn) | The ARN of the certificate to use for HTTPS termination | `any` | n/a | yes |
 | <a name="input_application_name"></a> [application\_name](#input\_application\_name) | The name to use for the Elastic Beanstalk application managed by this module | `any` | n/a | yes |
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | n/a | `string` | `"1"` | no |
 | <a name="input_environment_name"></a> [environment\_name](#input\_environment\_name) | The name to use for the Elastic Beanstalk application environment managed by this module | `any` | n/a | yes |
@@ -41,4 +41,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_application_cname"></a> [application\_cname](#output\_application\_cname) | FQDN for the application. |
-| <a name="output_application_name"></a> [application\_name](#output\_application\_name) | Name of the Application. |
+| <a name="output_application_name"></a> [application\_name](#output\_application\_name) | Name of the application. |
+| <a name="output_environment_name"></a> [environment\_name](#output\_environment\_name) | Name of the environment where the application runs. |
+<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
