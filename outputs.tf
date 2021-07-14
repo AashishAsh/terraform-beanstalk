@@ -12,3 +12,13 @@ output "application_cname" {
   description = "FQDN for the application."
   value       = join("", aws_route53_record.application_environment_ipv4_alias.*.fqdn)
 }
+
+output "autoscaling_groups" {
+  description = "List of autoscaling groups attached to the application."
+  value       = aws_elastic_beanstalk_environment.application_environment.*.autoscaling_groups
+}
+
+output "autoscaling_group" {
+  description = "Name of the autoscaling group."
+  value       = element(flatten(aws_elastic_beanstalk_environment.application_environment.*.autoscaling_groups), 1)
+}
