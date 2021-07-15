@@ -1,5 +1,6 @@
 variable "enabled" {
-  default = "1"
+  description = "A pass-through to emulate module-level count.  Set to 0 to skip the module, otherwise use the default."
+  default     = "1"
 }
 
 variable "application_name" {
