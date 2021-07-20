@@ -17,3 +17,8 @@ output "autoscaling_groups" {
   description = "List of autoscaling groups attached to the application."
   value       = flatten(aws_elastic_beanstalk_environment.application_environment.*.autoscaling_groups)
 }
+
+output "load_balancers" {
+  description = "Name of the Load balancers attached to the application."
+  value       = flatten(aws_elastic_beanstalk_environment.application_environment.*.load_balancers)
+}

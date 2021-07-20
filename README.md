@@ -58,5 +58,6 @@ No modules.
 | <a name="output_application_name"></a> [application\_name](#output\_application\_name) | Name of the application. |
 | <a name="output_autoscaling_groups"></a> [autoscaling\_groups](#output\_autoscaling\_groups) | List of autoscaling groups attached to the application. |
 | <a name="output_environment_name"></a> [environment\_name](#output\_environment\_name) | Name of the environment where the application runs. |
+| <a name="output_load_balancers"></a> [load\_balancers](#output\_load\_balancers) | Name of the Load balancers attached to the application. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
